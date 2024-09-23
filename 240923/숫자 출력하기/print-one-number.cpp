@@ -2,6 +2,6 @@
 using namespace std;
 
 int main() {
-    xout << 3;
+    cout << 3;
     return 0;
 }
