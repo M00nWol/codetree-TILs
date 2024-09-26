@@ -8,6 +8,6 @@ int main() {
     
     a = b = c;
 
-    cout << a << endl << b << endl << c;
+    cout << a << " " << b << " " << c;
     return 0;
 }
