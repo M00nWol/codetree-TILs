@@ -8,7 +8,7 @@ int main() {
     cin >> a;
 
     cout << fixed;
-    cout.precision(2);
+    cout.precision(1);
     cout << a*ft_to_cm;
     return 0;
 }
