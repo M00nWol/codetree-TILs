@@ -6,6 +6,6 @@ int main() {
     string s, t;
 
     cin >> s >> t;
-    cout << s << endl << t;
+    cout << t << endl << s;
     return 0;
 }
