@@ -10,6 +10,6 @@ int main() {
     cin.get();
     cin >> c;
 
-    cout << a << "-" << c << "-" << b;
+    cout << "010-" << c << "-" << b;
     return 0;
 }
