@@ -7,7 +7,7 @@ int main() {
 
     if(a>=1.0){
         cout << "High";
-    } elif(a>=0.5){
+    } else if(a>=0.5){
         cout << "Middle";
     } else{
         cout << "Low";
