@@ -15,7 +15,6 @@ int main() {
     else
         cout << 'N';
    }else if((B=='Y'&&b>=37) && (C=='Y'&&c>=37)){
-        cout << 'C';
         cout << 'E';
    }
     else
