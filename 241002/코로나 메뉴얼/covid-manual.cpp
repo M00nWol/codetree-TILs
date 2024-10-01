@@ -10,12 +10,12 @@ int main() {
 
    if(A=='Y'&&a>=37){
     if((B=='Y'&&b>=37) || (C=='Y'&&C>=37)){
-            cout << 'C';
             cout << 'E';
     }
     else
         cout << 'N';
    }else if((B=='Y'&&b>=37) && (C=='Y'&&C>=37)){
+        cout << 'C';
         cout << 'E';
    }
     else
