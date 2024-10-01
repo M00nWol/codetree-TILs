@@ -13,7 +13,7 @@ int main() {
         cout << 'E';
     else
         cout << 'N';
-   }else if((B=='Y'&&b>=37) || (C=='Y'&&C>=37)){
+   }else if((B=='Y'&&b>=37) && (C=='Y'&&C>=37)){
         cout << 'E';
    }
     else
