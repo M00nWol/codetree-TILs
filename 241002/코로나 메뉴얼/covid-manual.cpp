@@ -9,12 +9,12 @@ int main() {
    cin >> A >> a >> B >> b >> C >> c;
 
    if(A=='Y'&&a>=37){
-    if((B=='Y'&&b>=37) || (C=='Y'&&C>=37)){
+    if((B=='Y'&&b>=37) || (C=='Y'&&c>=37)){
             cout << 'E';
     }
     else
         cout << 'N';
-   }else if((B=='Y'&&b>=37) && (C=='Y'&&C>=37)){
+   }else if((B=='Y'&&b>=37) && (C=='Y'&&c>=37)){
         cout << 'C';
         cout << 'E';
    }
