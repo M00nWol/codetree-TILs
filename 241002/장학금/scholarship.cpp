@@ -14,7 +14,7 @@ int main() {
             m = 0;
         }
     } else {
-        m = 0
+        m = 0;
     }
 
     cout << m;
