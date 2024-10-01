@@ -8,6 +8,6 @@ int main() {
 
     if(a1>b1 || (a1==b1 && a2 > b2))
         cout << "A";
-    else(a1<b1 || (a1==b1&&a2<b2))
+    else if(a1<b1 || (a1==b1&&a2<b2))
         cout << "B";
 }
