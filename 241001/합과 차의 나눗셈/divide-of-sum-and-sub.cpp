@@ -7,7 +7,7 @@ int main() {
     int sum = a+b;
     int sub = a-b;
 
-    cout.precision(2);
+    cout.precision(3);
     cout << double(sum)/sub;
     return 0;
 }
