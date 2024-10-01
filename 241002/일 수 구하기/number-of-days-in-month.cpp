@@ -13,5 +13,6 @@ int main() {
         else if(n<=7) r = 30;
         else r = 31;
     }
+    cout << r;
     return 0;
 }
