@@ -5,7 +5,7 @@ int main() {
     int a, b, i;
     cin >> a >> b;
 
-    if(a%2!=0) a++; 
+    if(a%2==0) a++; 
     for(i=a ; i<=b; i+=2){
         cout << i << ' ';
     }
