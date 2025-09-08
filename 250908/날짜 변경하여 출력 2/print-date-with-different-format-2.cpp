@@ -9,6 +9,6 @@ int main() {
 
     a = b = '.';
 
-    cout << m << a << d << b << y;
+    cout << y << a << m << b << d;
     return 0;
 }
