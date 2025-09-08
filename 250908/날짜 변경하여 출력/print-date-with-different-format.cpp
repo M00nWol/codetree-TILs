@@ -6,7 +6,9 @@ int main() {
     char a, b;
 
     cin >> y >> a >> m >> b >> d;
+    
+    a = b = '-';
 
-    cout << m << " - " << d << " - " << y;
+    cout << m << a << d << b << y;
     return 0;
 }
