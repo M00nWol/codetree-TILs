@@ -10,7 +10,7 @@ int main() {
     w += 8;
     h *= 3;
 
-    cout << w << h << w*h;
+    cout << w << endl << h << endl << w*h;
 
     return 0;
 }
