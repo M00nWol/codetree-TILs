@@ -6,6 +6,6 @@ int main() {
 
     cin >> s >> t;
 
-    cout << s << t;
+    cout << t << endl << s;
     return 0;
 }
