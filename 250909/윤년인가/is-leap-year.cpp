@@ -7,6 +7,7 @@ int main() {
 
     cin >> y;
 
+    res = "false";
     if(y%4==0){
         res = "true";
         if(y%100==0 && y%400!=0){
