@@ -9,6 +9,8 @@ int main() {
     cin >> n;
 
     for(int i=1; i<=n; i++){
+        tmp = i;
+
         if(tmp%3==0) {
             cout << 0 << " ";
             continue;
@@ -17,7 +19,7 @@ int main() {
         // 10의 자리
         tmp = i/10;
         if(tmp==3 || tmp==6 || tmp==9){
-            cout <<  0 << " ";
+            cout << 0 << " ";
             continue;
         }
 
