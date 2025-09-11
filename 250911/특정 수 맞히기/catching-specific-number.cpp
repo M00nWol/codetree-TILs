@@ -8,12 +8,14 @@ int main() {
 
     while(n!=25){
         if(n>25){
-            cout << "Higher" << endl;
-        } else {
             cout << "Lower" << endl;
+        } else {
+            cout << "Higher" << endl;
         }
 
         cin >> n;
     }
+
+    cout << "Good";
     return 0;
 }
