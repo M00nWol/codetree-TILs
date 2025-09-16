@@ -20,14 +20,12 @@ int main() {
     for(int i=0; i<=k; i++){
         tmp = (arr[i]%100)/10;
         if(tmp!=0){
-            cnt[tmp+1]++;
+            cnt[tmp-1]++;
         }
     }
 
-    for(int j=0; j<10; j++){
+    for(int j=0; j<9; j++){
         cout << (j+1) << " - " << cnt[j] << endl;
-
-        cout << "J : " << j << endl;
     }
 
     return 0;
