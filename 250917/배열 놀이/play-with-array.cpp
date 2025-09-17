@@ -22,7 +22,10 @@ int main() {
                 if(arr[j]==p1){
                     cout << j+1;
                     break;
+                } else if(j==n-1){
+                    cout << 0;
                 }
+                
             }
         } else if(tmp ==3){
             cin >> p2;
