@@ -21,15 +21,20 @@ int main() {
     // compare
     for(int j=0; j<n1; j++){
         if(b[ib]==a[j]){
-            ib++;
-            tmp = true;
-            if(ib>=n2){
+            if(tmp==false && j==n1-1){
+                res = "No";
                 break;
             } else{
-                continue;
+                ib++;
+                tmp = true;
+                if(ib>=n2){
+                    break;
+                } else{
+                    continue;
+                }
             }
         } else{
-            if(j == n1-1){
+            if(tmp == false && j == n1-1){
                 res = "No";
                 break;
             }
