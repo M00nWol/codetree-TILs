@@ -7,7 +7,7 @@ int A[100];
 
 int main() {
     int min;
-    int cnt = 0;
+    int cnt = 1;
 
     cin >> N;
     for (int i = 0; i < N; i++) {
