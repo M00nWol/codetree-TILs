@@ -17,7 +17,7 @@ int main() {
 
     while(idx!=0){
         if(idx == 1){
-            cout << a[0];
+            cout << 1;
             break;
         }
         max = a[0];
