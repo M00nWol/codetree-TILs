@@ -5,8 +5,6 @@ int main() {
     int n1, n2;
     int a[100], b[100];
     int ib = 0;
-    bool tmp = false;
-    string res = "Yes";
 
     // input
     cin >> n1 >> n2;
@@ -19,31 +17,27 @@ int main() {
     }
 
     // compare
-    for(int j=0; j<n1; j++){
-        if(b[ib]==a[j]){
-            if(tmp==false && j==n1-1){
-                res = "No";
-                break;
-            } else{
-                ib++;
-                tmp = true;
-                if(ib>=n2){
-                    break;
-                } else{
-                    continue;
-                }
-            }
-        } else{
-            if(tmp == false && j == n1-1){
-                res = "No";
-                break;
-            }
-            if(tmp){
+    for(int i=0; i<n1; i++){
+        bool tmp = true;
+
+        for(int j=0; j<n2; j++){
+            if(i+j >= n1){
                 tmp = false;
+                break;
             }
+
+            if(a[i+j] != b[j]){
+                tmp = false;
+                break;
+            }
+        }
+
+        if(tmp){
+            cout << "Yes";
+            return 0;
         }
     }
 
-    cout << res;
+    cout << "No";
     return 0;
 }
