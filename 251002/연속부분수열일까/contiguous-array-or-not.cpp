@@ -29,8 +29,12 @@ int main() {
                 continue;
             }
         } else{
-            if(tmp == true || j == n1-1){
+            if(j == n1-1){
                 res = "No";
+                break;
+            }
+            if(tmp){
+                tmp = false;
             }
         }
     }
