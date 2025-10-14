@@ -14,19 +14,20 @@ int main() {
     int idx = 0;
     int sum = 0;
 
-    for(int i=1; i<len; i++){
-        if(A[i] == A[i-1]){
+
+    for(int i=0; i<len-1; i++){
+        if(A[i] == A[i+1]){
             cnt++;
         } else{
-            c[idx] = A[i-1];
+            c[idx] = A[i];
             s[idx] = to_string(cnt);
             sum += (1+s[idx].length());
             idx++;
             cnt = 1;
         }
 
-        if(i==len-1){
-            c[idx] = A[i];
+        if(i==len-2){
+            c[idx] = A[i+1];
             s[idx] = to_string(cnt);
             sum += (1+s[idx].length());
             idx++;
