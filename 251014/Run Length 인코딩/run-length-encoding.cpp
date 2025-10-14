@@ -26,7 +26,7 @@ int main() {
         }
 
         if(i==len-1){
-            c[idx] = A[i-1];
+            c[idx] = A[i];
             s[idx] = to_string(cnt);
             sum += (1+s[idx].length());
             idx++;
