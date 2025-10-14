@@ -9,7 +9,7 @@ int main() {
 
     len = s.length()-1;
 
-    while(a>0){
+    while(a>0 && len>=0){
         cout << s[len];
         len--;
         a--;
