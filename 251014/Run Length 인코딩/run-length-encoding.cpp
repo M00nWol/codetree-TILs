@@ -15,7 +15,7 @@ int main() {
     int sum = 0;
 
     if(len==1){
-        cout << 2;
+        cout << 2 << endl;
         cout << A[0] << len;
         return 0;
     }
