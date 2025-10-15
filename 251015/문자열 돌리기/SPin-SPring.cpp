@@ -8,8 +8,10 @@ int main() {
     cin >> s;
     len = s.length();
 
+    cout << s << endl;
+
     for(int i=0; i<len; i++){
-        s = s.substr(len-1, 1) + s.substr(1, len-1);
+        s = s.substr(len-1, 1) + s.substr(0, len-1);
         cout << s << endl;
     }
 
