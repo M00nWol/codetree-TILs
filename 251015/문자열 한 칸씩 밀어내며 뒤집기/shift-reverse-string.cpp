@@ -17,6 +17,7 @@ int main() {
         }else if(a==2){
             s = s.substr(len-1, 1) + s.substr(0, len-1);
         }else {
+            tmp = ""
             for(int j=len-1; j>=0; j--){
                 tmp += s[j];
             }
