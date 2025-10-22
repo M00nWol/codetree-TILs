@@ -12,7 +12,7 @@ int lcm(int res, int idx){
 
     int gcd = 1;
 
-    for(int i=2; i<res; i++){
+    for(int i=2; i<=res; i++){
         if(res%i==0 && arr[idx]%i==0){
             gcd = i;
             break;
