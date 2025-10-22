@@ -12,14 +12,16 @@ int lcm(int res, int idx){
 
     int gcd = 1;
 
-    for(int i=2; i<=res; i++){
-        if(res%i==0 && arr[idx]%i==0){
-            gcd = i;
-            break;
+    if(res!=arr[idx] && res%arr[idx]!=0){
+        for(int i=2; i<=res; i++){
+            if(res%i==0 && arr[idx]%i==0){
+                gcd = i;
+                break;
+            }
         }
+        res = res*arr[idx]/gcd;
     }
 
-    res = res*arr[idx]/gcd;
 
     return lcm(res, idx-1);
 }
