@@ -6,14 +6,14 @@ int n;
 int arr[100];
 
 int max(int M, int idx){
-    if(idx==0){
-        return arr[0];
+    if(idx==-1){
+        return M;
     }
 
     if(arr[idx]>M){
         M = arr[idx];
     }
-    cout << idx << " " << M << endl;
+
     return max(M, idx-1);
 }
 
