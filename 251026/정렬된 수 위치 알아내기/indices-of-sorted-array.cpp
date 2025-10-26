@@ -18,7 +18,11 @@ class Element{
 };
 
 bool Cmp1(Element &a, Element &b){
-    return a.value < b.value;
+    if(a.value != b.value){
+        return a.value < b.value;
+    }
+
+    return a.idx < b.idx;
 }
 
 bool Cmp2(Element &a, Element &b){
@@ -34,8 +38,9 @@ int main() {
 
     for(int i=0; i<n; i++){
         cin >> value;
-        ele[i] = Element(value, i, i);    
+        ele[i] = Element(value, i+1, i);    
     }    
+
 
     sort(ele, ele+n, Cmp1);
 
