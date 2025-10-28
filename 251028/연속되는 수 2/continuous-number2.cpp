@@ -5,7 +5,7 @@ int main() {
     int n;
     int a[1000];
     int cnt = 0;
-    int max = 0;
+    int max = 1;
 
     cin >> n;
 
