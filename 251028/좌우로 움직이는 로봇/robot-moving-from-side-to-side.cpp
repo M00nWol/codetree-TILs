@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int n, m;
-    int a[50001]={}, b[50001]={};
+    int a[1000001]={}, b[1000001]={};
     int timea=1, timeb=1;
     int time, t;
     char d;
@@ -41,11 +41,11 @@ int main() {
         }
     }
     
-    for(int i=50000; i>=timea; i--){
+    for(int i=1000000; i>=timea; i--){
         a[i] = a[timea-1];
     }
 
-    for(int i=50000; i>=timeb; i--){
+    for(int i=1000000; i>=timeb; i--){
         b[i] = b[timeb-1];
     }
 
