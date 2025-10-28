@@ -29,13 +29,13 @@ int main() {
 
     for(int i=0; i<MAX_R+1; i++){
         for(int j=0; j<MAX_R+1; j++){
-            if(rec[i][j]==2){
+            if(rec[i][j]%2==0){
                 sum++;
             }
         }
     }
 
     cout << sum;
-    
+
     return 0;
 }
