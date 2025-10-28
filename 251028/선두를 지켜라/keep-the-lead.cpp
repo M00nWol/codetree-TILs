@@ -9,7 +9,7 @@ int main() {
     int t_a = 1;
     int t_b = 1;
     int cnt = 0;
-    int last_idx = 0;
+    int prev = 0;
 
     cin >> n >> m;
 
@@ -30,16 +30,12 @@ int main() {
     }
 
     for(int i=0; i<t_a-1; i++){
-        c[i] = a[i]-b[i];
+        c[i] = (a[i]>b[i])?1:2;
     }
 
     for(int i=1; i<t_a-1; i++){
-        if(c[i]*c[last_idx]<0){
+        if(c[i]!=c[i-1]){
             cnt++;
-        }
-
-        if(c[i] != 0){
-            last_idx = i;
         }
     }
 
