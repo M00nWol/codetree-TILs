@@ -3,7 +3,7 @@ using namespace std;
 
 
 int main() {
-    int a[1000] = {},b[1000] = {};
+    int a[1000000] = {},b[1000000] = {};
     int n, m;
     char d;
     int t, tmp;
