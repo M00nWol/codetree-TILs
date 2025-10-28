@@ -22,14 +22,14 @@ int main() {
 
         for(int r=x1; r<x2; r++){
             for(int c=y1; c<y2; c++){
-                rec[r][c] = i+1;
+                rec[r][c] = i;
             }
         }
     }
 
     for(int i=0; i<MAX_R+1; i++){
         for(int j=0; j<MAX_R+1; j++){
-            if(rec[i][j]%2==0){
+            if(rec[i][j]%2==1){
                 sum++;
             }
         }
