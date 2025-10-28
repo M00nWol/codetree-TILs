@@ -9,7 +9,7 @@ int main() {
     int t_a = 1;
     int t_b = 1;
     int cnt = 0;
-    int prev = 0;
+
 
     cin >> n >> m;
 
@@ -33,6 +33,7 @@ int main() {
         c[i] = a[i]-b[i];
     }
 
+    int prev = c[0]
     for(int i=1; i<t_a; i++){
         if(c[i]==0){
             continue;
