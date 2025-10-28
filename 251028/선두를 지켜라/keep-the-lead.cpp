@@ -34,6 +34,9 @@ int main() {
     }
 
     for(int i=1; i<t_a; i++){
+        if(c[i]==0)[
+            continue;
+        ]
         if(c[i]*prev<0){
             cnt++;
         }
