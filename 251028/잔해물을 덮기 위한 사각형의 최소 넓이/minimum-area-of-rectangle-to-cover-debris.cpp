@@ -9,6 +9,7 @@ int main() {
     int rec[MAX_R+1][MAX_R+1] = {};
     int sum = 0;
     int minx, miny, maxx, maxy;
+    bool res = false;
 
     for(int i=0; i<2; i++){
         cin >> x1[i] >> y1[i] >> x2[i] >> y2[i];
@@ -24,6 +25,10 @@ int main() {
                     rec[r][c] = 1;
                 } else {
                     rec[r][c] = 0;
+                }
+
+                if(rec[r][c]==1){
+                    res = true;
                 }
             }
         }
@@ -52,6 +57,6 @@ int main() {
         }
     }
 
-    cout << sum;
+    cout << ((res)?sum:0);
     return 0;
 }
