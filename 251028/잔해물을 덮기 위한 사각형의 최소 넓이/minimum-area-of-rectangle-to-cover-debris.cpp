@@ -26,36 +26,35 @@ int main() {
                 } else {
                     rec[r][c] = 0;
                 }
-
-                if(rec[r][c]==1){
-                    res = true;
-                }
             }
         }
     }
 
-    minx = x1[0];
-    miny = y1[0];
-    maxx = x2[0];
-    maxy = y2[0];
+    minx = MAX_R;
+    miny = MAX_R;
+    maxx = 0;
+    maxy = 0;
 
     for(int i=x1[0]; i<x2[0]; i++){
-        for(int j=y1[0]; j<y1[0]; j++){
-            if((rec[i][j]==1)&&(i<minx)&&(j<miny)){
+        for(int j=y1[0]; j<y2[0]; j++){
+            if((rec[i][j]==1)&&(i<=minx)&&(j<=miny)){
                 minx = i;
                 miny = j;
-            } else if((rec[i][j]==1)&&(i>maxx)&&(j>maxy)){
+                res = true;
+            } else if((rec[i][j]==1)&&(i>=maxx)&&(j>=maxy)){
                 maxx = i;
                 maxy = j;
+                res = true;
             }
         }
     }
 
-    for(int i=minx; i<maxx; i++){
-        for(int j=miny; j<maxy; j++){
+    for(int i=minx; i<=maxx; i++){
+        for(int j=miny; j<=maxy; j++){
             sum++;
         }
     }
+
 
     cout << ((res)?sum:0);
     return 0;
