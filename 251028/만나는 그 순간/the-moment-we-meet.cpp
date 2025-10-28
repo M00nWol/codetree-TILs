@@ -47,9 +47,10 @@ int main() {
     for(int i=1; i<=idx; i++){
         if(a[i]==b[i]){
             cout << i;
-            break;
+            return 0;
         }
     }
 
+    cout << -1;
     return 0;
 }
