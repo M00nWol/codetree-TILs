@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#define MAX 1000000
+#define MAX 1000005
 
 int main() {
     int n,m,v,t;
@@ -29,13 +29,16 @@ int main() {
         }
     }
 
-    for(int i=0; i<t_a-1; i++){
-        c[i] = (a[i]>b[i])?1:2;
+    for(int i=0; i<t_a; i++){
+        c[i] = a[i]-b[i];
     }
 
-    for(int i=1; i<t_a-1; i++){
-        if(c[i]!=c[i-1]){
+    for(int i=1; i<t_a; i++){
+        if(c[i]*prev<0){
             cnt++;
+        }
+        if(c[i]!=0){
+            prev = c[i];
         }
     }
 
