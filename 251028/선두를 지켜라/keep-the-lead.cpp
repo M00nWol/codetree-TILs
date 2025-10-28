@@ -9,6 +9,7 @@ int main() {
     int t_a = 1;
     int t_b = 1;
     int cnt = 0;
+    int header = 0;
 
 
     cin >> n >> m;
@@ -30,20 +31,18 @@ int main() {
     }
 
     for(int i=0; i<t_a; i++){
-        c[i] = a[i]-b[i];
-    }
-
-    int prev = c[0];
-    for(int i=1; i<t_a; i++){
-        if(c[i]==0){
-            continue;
+        if(a[i]>b[i]){
+            if(header==2){
+                cnt++;
+            }
+            header = 1;
+        } else if(a[i] < b[i]){
+            if(header==1){
+                cnt++;
+            }
+            header = 2;
         }
-        if(c[i]*prev<0){
-            cnt++;
-        }
-        if(c[i]!=0){
-            prev = c[i];
-        }
+    
     }
 
     cout << cnt;
