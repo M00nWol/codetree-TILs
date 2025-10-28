@@ -14,9 +14,10 @@ int main() {
 
         if(student[tmp] >= k){
             cout << tmp;
-            break;
+            return 0;
         }
     }
 
+    cout << -1;
     return 0;
 }
