@@ -35,16 +35,14 @@ int main() {
     maxx = 0;
     maxy = 0;
 
-    for(int i=x1[0]; i<x2[0]; i++){
-        for(int j=y1[0]; j<y2[0]; j++){
-            if((rec[i][j]==1)&&(i<=minx)&&(j<=miny)){
-                minx = i;
-                miny = j;
+    for (int x = 0; x <= MAX_R; x++) {
+        for (int y = 0; y <= MAX_R; y++) {
+            if (rec[x][y]) {
                 res = true;
-            } else if((rec[i][j]==1)&&(i>=maxx)&&(j>=maxy)){
-                maxx = i;
-                maxy = j;
-                res = true;
+                minx = min(minx, x);
+                miny = min(miny, y);
+                maxx = max(maxx, x);
+                maxy = max(maxy, y);
             }
         }
     }
