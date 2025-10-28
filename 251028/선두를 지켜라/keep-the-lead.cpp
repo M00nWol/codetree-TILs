@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#define MAX 1000001
+#define MAX 1000000000
 
 int main() {
     int n,m,v,t;
