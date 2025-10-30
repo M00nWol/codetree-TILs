@@ -3,9 +3,9 @@ using namespace std;
 
 int GetDir(char c){
     if(c=='U'){
-        return 2;
-    } else if(c=='D'){
         return 1;
+    } else if(c=='D'){
+        return 2;
     } else if(c=='R'){
         return 0;
     } else {
