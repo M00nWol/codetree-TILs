@@ -2,7 +2,7 @@
 using namespace std;
 
 bool InRange(int x, int y, int n){
-    return x>=0 && x<=n && y>=0 && y<=n;
+    return x>=0 && x<n && y>=0 && y<n;
 }
 
 int main() {
@@ -26,13 +26,11 @@ int main() {
             cnt1 = 0;
             for(int dir=0; dir<4; dir++){
                 r = i + dx[dir];
-                c = j + dx[dir];
-                if(InRange(r,c,n-1)&&arr[r][c]==1){
-                    cout << i << " " << j << " " << dir << " " r << " " << c <<endl;
+                c = j + dy[dir];
+                if(InRange(r,c,n)&&arr[r][c]==1){
                     cnt1++;
                 }
                 if(cnt1>=3){
-                    cout << i << " " << j << endl;
                     cnt++;
                     break;
                 }
