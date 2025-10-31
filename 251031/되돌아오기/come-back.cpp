@@ -16,7 +16,7 @@ int GetDir(char c){
 
 int main() {
     int n, d;
-    int c;
+    char c;
     int dx[4] = {1,-1,0,0}, dy[4] = {0,0,-1,1};
     int dir, x, y;
     int inx, iny;
@@ -34,15 +34,16 @@ int main() {
         dir = GetDir(c);
         inx = dx[dir];
         iny = dy[dir];
-        cout << dir << endl'
 
 
 
         while(d--){
             x += inx;
             y += iny;
-            cout << x << y << endl;
-
+            if(x==0 && y==0){
+                cout << t;
+                return 0;
+            }
             t++;
         }
     }
