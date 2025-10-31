@@ -10,7 +10,7 @@ int main() {
     int r, c, dir;
     int dx[4] = {0,-1,0,1}, dy[4] = {-1, 0, 1, 0};
     char arr[1000][1000] = {};
-    int cnt=0;
+    int cnt=1;
 
     cin >> n;
 
@@ -40,8 +40,6 @@ int main() {
         } else {
             dir = (dir+3)%4;
         }
-
-        cout << dir << endl'
 
         r += dy[dir];
         c += dx[dir];
