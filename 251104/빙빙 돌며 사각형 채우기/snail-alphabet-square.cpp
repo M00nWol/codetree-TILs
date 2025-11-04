@@ -1,14 +1,15 @@
 #include <iostream>
 using namespace std;
 
-int n, m;
 
-bool InRange(int x, int y){
+
+bool InRange(int x, int y, int n, int m){
     return x>=0 && x<n && y>=0 && y<m;
 }
 
 int main() {
-    int dx[4] = {0, 1, 0, -1} dy[4] = {1,0,-1,0};
+    int n, m;
+    int dx[4] = {0, 1, 0, -1},dy[4] = {1,0,-1,0};
     int dir = 0;
     int cur_x, cur_y;
     int nx=0, ny=0;
@@ -22,7 +23,9 @@ int main() {
         cur_x = nx+dx[dir];
         cur_y = ny+dy[dir];
 
-        if(!(InRange(nx, ny))||arr[cur_x][cur_y]!=0){
+        
+
+        if(!(InRange(cur_x , cur_y, n, m))||arr[cur_x][cur_y]!=0){
             dir = (dir+1)%4;
         }
 
