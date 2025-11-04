@@ -20,7 +20,7 @@ int main() {
 
     for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
-            cin >> arr[i][i];
+            cin >> arr[i][j];
         }
     }
     
@@ -39,12 +39,12 @@ int main() {
         c = q%n;
     }
 
-     cout << dir << endl;
-     cout << r << " "<< c << endl;
+    //  cout << dir << endl;
+    //  cout << r << " "<< c << endl;
 
     while(InRange(r, c, n)){
         cnt++;
-        cout << arr[r][c] << endl;
+        //cout << arr[r][c] << endl;
         if(arr[r][c]=='\\'){
             if(dir%2==0){
                 dir = (dir+3)%4;
@@ -61,8 +61,8 @@ int main() {
 
         r += dy[dir];
         c += dx[dir];
-        cout << dir << endl;
-        cout << r << " "<< c << endl;
+        // cout << dir << endl;
+        // cout << r << " "<< c << endl;
     }
 
     cout << cnt;
