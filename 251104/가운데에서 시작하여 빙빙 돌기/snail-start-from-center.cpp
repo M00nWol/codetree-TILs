@@ -9,12 +9,13 @@ int main() {
     int arr[100][100] ={};
     int dir = 3;
 
+    cin >> n;
 
-    nx = n/2+1;
-    ny = n/2+1;
+    nx = n/2;
+    ny = n/2;
     arr[nx][ny] = 1;
     
-    cin >> n;
+    
 
     for(int i=2; i<=n*n; i++){  
 
