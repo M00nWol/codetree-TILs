@@ -13,7 +13,7 @@ int main() {
     int k;
     int q, xo;
     int r, c;
-    int cnt = 0;
+    int cnt = 1;
 
     cin >> n;
 
@@ -40,7 +40,6 @@ int main() {
     }
 
     while(InRange(r, c, n)){
-        cnt++;
         if(arr[r][c]=='\\'){
             if(dir%2==0){
                 dir = (dir+3)%4;
@@ -54,6 +53,7 @@ int main() {
                 dir = (dir+1)%4;
             }
         }
+        if(InRange(r, c, n)) cnt++;
 
         r += dy[dir];
         c += dx[dir];
