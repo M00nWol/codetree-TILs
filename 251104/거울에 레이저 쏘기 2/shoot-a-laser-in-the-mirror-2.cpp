@@ -13,7 +13,7 @@ int main() {
     int k;
     int q, xo;
     int r, c;
-    int cnt = 1;
+    int cnt = 0;
 
     cin >> n;
 
@@ -32,11 +32,11 @@ int main() {
     dir = q;
 
     if(q%2==0){
-        r = (q>=2)?2:0;
+        r = (q>=2)?n-1:0;
         c = (q>=2)?(n-1-xo):xo;
     } else {
         r = (q>=2)?(n-1-xo):xo;
-        c = (q>=2)?0:2;
+        c = (q>=2)?0:n-1;
     }
 
     while(InRange(r, c, n)){
@@ -53,7 +53,7 @@ int main() {
                 dir = (dir+1)%4;
             }
         }
-        if(InRange(r, c, n)) cnt++;
+        cnt++;
 
         r += dy[dir];
         c += dx[dir];
