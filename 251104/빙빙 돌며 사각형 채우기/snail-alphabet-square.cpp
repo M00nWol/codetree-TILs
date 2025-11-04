@@ -17,9 +17,11 @@ int main() {
 
     cin >> n >> m;
 
-    arr[nx][ny] = 'A';
+    char c = 'A';
+    arr[nx][ny] = c;
 
     for(int i=1; i<n*m; i++){
+
         cur_x = nx+dx[dir];
         cur_y = ny+dy[dir];
 
@@ -32,7 +34,14 @@ int main() {
         nx += dx[dir];
         ny += dy[dir];
 
-        arr[nx][ny] = 'A'+i;
+        c++;
+        if(c>'Z'){
+            c = 'A';
+        }
+        arr[nx][ny] = c;
+
+        
+
     }
 
     for(int i=0; i<n; i++){
