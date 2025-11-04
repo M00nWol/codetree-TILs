@@ -32,19 +32,15 @@ int main() {
     dir = q;
 
     if(q%2==0){
-        r = q%n;
+        r = (q>=2)?2:0;
         c = (q>=2)?(n-1-xo):xo;
     } else {
         r = (q>=2)?(n-1-xo):xo;
-        c = q%n;
+        c = (q>=2)?0:2;
     }
-
-    //  cout << dir << endl;
-    //  cout << r << " "<< c << endl;
 
     while(InRange(r, c, n)){
         cnt++;
-        //cout << arr[r][c] << endl;
         if(arr[r][c]=='\\'){
             if(dir%2==0){
                 dir = (dir+3)%4;
@@ -61,8 +57,6 @@ int main() {
 
         r += dy[dir];
         c += dx[dir];
-        // cout << dir << endl;
-        // cout << r << " "<< c << endl;
     }
 
     cout << cnt;
