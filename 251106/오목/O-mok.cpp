@@ -43,7 +43,7 @@ int main() {
     }
 
 
-    // 대각선 탐색
+    // 우대각선 탐색
     for(int i=0; i<=n-5; i++){
         for(int j=0; j<=n-5; j++){
             sum = 1;
@@ -52,6 +52,20 @@ int main() {
             }
             if(sum == 1 || sum == 32){
                 cout <<(sum==1?1:2) << endl << i+3 << " " << j+3;
+                return 0;
+            } 
+        }
+    }
+
+    // 좌대각선 탐색    
+    for(int i=n-1; i>=4; i--){
+        for(int j=0; j<=n-5; j++){
+            sum = 1;
+            for(int idx=0; idx<=4; idx++){
+                sum *= arr[i-idx][j+idx];
+            }
+            if(sum == 1 || sum == 32){
+                cout <<(sum==1?1:2) << endl << i-1 << " " << j+3;
                 return 0;
             } 
         }
