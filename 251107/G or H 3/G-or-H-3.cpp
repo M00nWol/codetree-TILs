@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     int n, k, idx;
     int max_idx = 0;
-    char c[100] = {};
+    char c[10000] = {};
     int max_score=INT_MIN;
     int score;
 
@@ -28,7 +28,6 @@ int main() {
             }
         }
         max_score = max(max_score, score);
-        
     }
 
     cout << max_score;
