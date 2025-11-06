@@ -3,8 +3,8 @@
 using namespace std;
 
 bool NoCarry(int a, int b, int c){
-    while(a>0&&b>0&&c>0){
-        if((a%10)+(b%10)+(c%10) > 10){
+    while(a>0||b>0||c>0){
+        if((a%10)+(b%10)+(c%10) >= 10){
             return false;
         }
         a /= 10;
