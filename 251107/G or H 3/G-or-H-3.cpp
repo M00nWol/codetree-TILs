@@ -18,7 +18,8 @@ int main() {
         max_idx = max(max_idx, idx);
     }
 
-    for(int i=1; i<=max_idx-k; i++){
+
+    for(int i=1; i<=10000-k; i++){
         score = 0;
         for(int j=i; j<=i+k; j++){
             if(c[j]=='G'){
