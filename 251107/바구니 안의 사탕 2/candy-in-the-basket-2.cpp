@@ -18,7 +18,8 @@ int main() {
         arr[idx] += candy;
     }
 
-    for(int i=0; i<=100-(k+1); i++){
+
+    for(int i=0; i<=100-(k-1); i++){
         sum = 0;
         for(int j=i-k; j<=i+k; j++){
             if(j>=0 && j<=100){
