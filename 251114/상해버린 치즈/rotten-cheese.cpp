@@ -73,10 +73,15 @@ int main() {
         }
     }
 
+    for(int i=0; i<m; i++){
+        cout << oldCheese[i] << " ";
+    }
+    cout << endl;
+
     // 치즈 인덱스에서 s와 그 값이 같을 경우에만 그 치즈를 먹은 사람 카운트
     for(int i=0; i<d; i++){
         int chnum = cheese[i].m;
-        if(oldCheese[chnum]==s){
+        if(oldCheese[chnum]>=s){
             // cout << i << endl;
             infected[cheese[i].p]=1;
         }
