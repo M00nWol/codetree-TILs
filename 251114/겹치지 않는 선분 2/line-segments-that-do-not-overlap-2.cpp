@@ -36,7 +36,6 @@ int main() {
 
     for(int i=0; i<n; i++){
         for(int j=i+1; j<n; j++){
-            if(flag[j]) continue;
             
             if(line[j].end<line[i].end){
                 flag[i] = 1;
