@@ -65,7 +65,7 @@ int main() {
         sick = record[i].p;
 
         int j=0;
-        for(int i=0; i<d; i++){
+        for(int i=0; i<m; i++){
             check[i] = 0;
         }
         // time 전까지 sick이 먹은 모든 치즈에 체크 
@@ -77,6 +77,10 @@ int main() {
             j++;
         }
     }
+
+    // for(int i=0; i<m; i++){
+    //     cout << oldCheese[i] << " " <<endl;
+    // }
 
 
     // 치즈 인덱스에서 s와 그 값이 같을 경우에만 그 치즈를 먹은 사람 카운트
