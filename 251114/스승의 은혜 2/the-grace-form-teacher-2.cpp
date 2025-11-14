@@ -39,7 +39,6 @@ int main() {
         }
 
         cnt_max = max(cnt_max, cnt);
-        cout << endl;
     }
 
     cout << cnt_max;
