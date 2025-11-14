@@ -17,12 +17,15 @@ int main() {
         if(bomb[arr[i]]==1) continue;
 
         for(int j=i+1; j<n; j++){
-            if(arr[i]==arr[j] && (j-i)<=3){
+            if(arr[i]==arr[j] && (j-i)<=k){
                 bomb[arr[i]]=1;
             }
         }
     }
 
+    for(int i=0; i<=10; i++){
+        cout << bomb[i] << " ";
+    }
     for(int i=1001; i>=0; i--){
         if(bomb[i]==1){
             bomb_max = i;
