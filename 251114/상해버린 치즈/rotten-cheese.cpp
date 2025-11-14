@@ -69,7 +69,7 @@ int main() {
             check[i] = 0;
         }
         // time 전까지 sick이 먹은 모든 치즈에 체크 
-        while(cheese[j].t <= time){
+        while(j < d && cheese[j].t <= time){
             if(cheese[j].p == sick && check[cheese[j].m]==0){
                 oldCheese[cheese[j].m]++;
                 check[cheese[j].m]=1;
