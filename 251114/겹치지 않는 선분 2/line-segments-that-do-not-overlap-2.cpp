@@ -36,10 +36,9 @@ int main() {
 
     for(int i=0; i<n; i++){
         for(int j=i+1; j<n; j++){
-            if(flag[i]) break;
             if(flag[j]) continue;
             
-            if(line[i].end > line[j].end){
+            if(line[j].end<line[i].end){
                 flag[i] = 1;
                 flag[j] = 1;
             }
