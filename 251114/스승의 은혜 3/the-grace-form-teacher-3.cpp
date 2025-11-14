@@ -31,9 +31,6 @@ int main() {
 
         sort(tmp, tmp+n);
 
-        for(int k=0; k<n; k++){
-            cout << tmp[k] << endl;
-        }
         
         int idx = 0;
 
