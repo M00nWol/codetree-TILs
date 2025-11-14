@@ -23,9 +23,6 @@ int main() {
         }
     }
 
-    for(int i=0; i<=10; i++){
-        cout << bomb[i] << " ";
-    }
     for(int i=1001; i>=0; i--){
         if(bomb[i]==1){
             bomb_max = i;
