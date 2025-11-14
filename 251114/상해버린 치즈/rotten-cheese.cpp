@@ -30,7 +30,7 @@ class Record{
 };
 
 bool Cmp(const Cheese& a, const Cheese& b){
-    return a.t <= b.t;
+    return a.t < b.t;
 }
 
 int main() {
