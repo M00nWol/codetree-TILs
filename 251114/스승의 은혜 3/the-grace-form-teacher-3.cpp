@@ -31,12 +31,15 @@ int main() {
 
         sort(tmp, tmp+n);
 
+        for(int k=0; k<n; k++){
+            cout << tmp[k] << endl;
+        }
         
         int idx = 0;
 
         while(tmpb>0){
             tmpb -= tmp[idx];
-            if(b<0) break;
+            if(tmpb<0) break;
             cnt++;
             idx++;
         }
