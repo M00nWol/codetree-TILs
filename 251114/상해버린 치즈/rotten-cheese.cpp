@@ -37,6 +37,7 @@ int main() {
     int n, m, d, s;
     int sick, time;
     int cnt = 0;
+    int check[50] = {};
     int oldCheese[50] = {};
     int infected[50] = {};
     Cheese cheese[1000];
@@ -64,10 +65,14 @@ int main() {
         sick = record[i].p;
 
         int j=0;
+        for(int i=0; i<d; i++){
+            check[i] = 0;
+        }
         // time 전까지 sick이 먹은 모든 치즈에 체크 
         while(cheese[j].t <= time){
-            if(cheese[j].p == sick){
+            if(cheese[j].p == sick && check[cheese[j].m]==0){
                 oldCheese[cheese[j].m]++;
+                check[cheese[j].m]=1;
             }
             j++;
         }
