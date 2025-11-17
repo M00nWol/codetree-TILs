@@ -27,7 +27,8 @@ int main() {
         } else if(command == 'R'){
             if(it!=l.end()) it++;
         } else if(command == 'D'){
-            if(it!=l.end()) l.erase(it);
+            if(it!=l.end()) 
+            it = l.erase(it);
         } else if(command == 'P'){
             cin >> c;
             l.insert(it, c);
